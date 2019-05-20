@@ -1,0 +1,106 @@
+
+<html> 
+<head> <link rel="STYLESHEET" type="text/css" href="estilos.css"> 
+    <title>P&aacute;gina que le estilos</title> 
+
+</head> 
+<body> 
+ <br/> 
+
+ <STYLE type="text/css"> 
+    <!-- 
+    -->
+    *{margin: 0; padding: 0; font-family: inherit;}
+    p{height: 100px; width: 800px;margin-left: 07cm;margin-right: 20cm; background-color:yellowgreen;
+    font-size:50px; text-align: center; text-indent:1cm;padding-top: 20px; word-wrap: break-word;border-radius: 10px; color: white;text-align: left; background: linear-gradient(0deg,rgb(6, 216, 23),#0ef506);} 
+        form input:required{border:2x solid red;}
+        table{
+            
+            width: 1000%
+            font-size:12px;
+            
+
+        } 
+        tr td{
+            width: 20%
+            text-align: right;
+        }
+label { float: left; width: 09em; margin-right: 0em; text-align: left; padding-left:17em;}
+
+
+    </STYLE> 
+     <p>Green Leaves  <img src="hoja.png" style="float:right;"/></p>
+
+--
+
+ </div>
+<script>
+function validarFormulario(){
+ 
+    var txtNombre = document.getElementById('nombre').value;
+    var txtemail = document.getElementById('Email').value;
+    var txtTelefono = document.getElementById('Telefono').value;
+    var txtFecha = document.getElementById('fecha').value;
+    var cmbSelector = document.getElementById('selector').selectedIndex;
+    
+ 
+   
+ 
+    
+    if(txtNombre == null || txtNombre.length == 0 ){
+      
+      alert('ERROR: El campo nombre no debe ir vacío');
+      return false;
+    }
+ 
+
+    if(!(/\S+@\S+\.\S+/.test(txtemail))){
+      alert('ERROR: Debe escribir un correo válido');
+      return false;
+    }
+
+    if(txtTelefono == null || txtEdad.length == 0 || isNaN(txtEdad)){
+      alert('ERROR: Debe ingresar una edad');
+      return false;
+    }
+ 
+    
+ 
+    
+    if(!isNaN(txtFecha)){
+      alert('ERROR: Debe elegir una fecha');
+      return false;
+    }
+ 
+    return true;
+  }
+ 
+  </script>
+ <form action ="" onsubmit="return validarFormulario">
+ <div class="form-group">
+              <label>Nombre </label>
+              <input type="text" placeholder="" required class="form-control" name="nombre">
+            </div>
+            <div class="form-group">
+              <label>E-mail</label>
+              <input type="text" placeholder="" required class="form-control" name="Email">
+            </div>
+            <div class="form-group">
+              <label>Telefono </label>
+              <input type="mail" placeholder="" required class="form-control" name="Telefono">
+            </div>
+            <div class="form-group">
+              <label>Fecha </label>
+              <input type="date" name="fecha" min="2018-03-25" max="2018-05-25" step="1" required class="form-control" name="fecha">
+            </div>
+            <div class="form-group">
+              <label>Ciudad y Estado </label>
+              <input type="mail" placeholder="" required class="form-control" name="ciudad">
+            </div>
+	    <div class="form-group">
+              <div style="text-indent:548px;">
+              <input type="submit" value="Enviar" equired class="form-control" name="direccion"/>
+            </div>
+
+</body> 
+</html>
